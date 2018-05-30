@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Татарчук](https://up.htmlacademy.ru/htmlcss/21/user/18434).
-* Наставник: `Александр Горбачев`(https://htmlacademy.ru/profile/hrbchv).
+* Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv).
 
 ---
 
