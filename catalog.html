@@ -22,17 +22,65 @@
       <h1 class="visually-hidden">Выбор отеля седоны</h1>
       <section class="hotel-filters">
         <h2 class="visually-hidden">Фильтр поиска отеля седоны</h2>
-        <!--Фильтр отелей-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi">
+                <label for="filter-wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+            <div class="filter-button-cost">
+              <button type="button" name="min-cost">От 0</button>
+              <button type="button" name="max-cost">До 3000</button>
+            </div>
+            <input type="range" name="total-cost" value="">
+          </fieldset>
+          <button type="submit" class="filter-button">Показать</button>
+        </form>
       </section>
       <section class="hotel-sort">
         <h2 class="visually-hidden">Сортировка отелей седоны</h2>
         <h3 class="hotel-sort-total">Найдено: 3</h3>
         <span class="hotel-sort-description">Сортировка:</span>
         <ul class="hotel-sort-list">
-          <li class="hotel-sort-item hotel-sort-item-active"><span class="button ">По цене</span></li>
-          <li class="hotel-sort-item"><span class="button">По типу</span></li>
-          <li class="hotel-sort-item"><span class="button">По рейтингу</span></li>
+          <li class="hotel-sort-item hotel-sort-item-active"><a href="#" class="sort">По цене</a></li>
+          <li class="hotel-sort-item"><a  href="#" class="sort">По типу</a></li>
+          <li class="hotel-sort-item"><a  href="#" class="sort">По рейтингу</a></li>
         </ul>
+        <p class="sorting">
+          <a href="#" class="sort-asc">По возростанию</a>
+          <a href="#" class="sort-desc sort-active">По убыванию</a>
+        </p>
       </section>
       <article class="catalog">
         <h2 class="visually-hidden">Каталог отелей седоны</h2>
@@ -52,8 +100,8 @@
                   <span class="catalog-item-cost">От 4000 Р.</span>
                 </p>
                 <p class="catalog-item-buttons">
-                  <a href="#" class="button">Подробнее</a>
-                  <a href="#" class="button">Забронировать</a>
+                  <a href="#" class="more">Подробнее</a>
+                  <a href="#" class="book">Забронировать</a>
                 </p>
             </div>
               <p class="catalog-item-rate">
@@ -75,8 +123,8 @@
                   <span class="catalog-item-cost">От 3000 Р.</span>
                 </p>
                 <p class="catalog-item-buttons">
-                  <a href="#" class="button">Подробнее</a>
-                  <a href="#" class="button">Забронировать</a>
+                  <a href="#" class="more">Подробнее</a>
+                  <a href="#" class="book">Забронировать</a>
                 </p>
               </div>
               <p class="catalog-item-rate">
@@ -98,8 +146,8 @@
                   <span class="catalog-item-cost">От 2000 Р.</span>
                 </p>
                 <p class="catalog-item-buttons">
-                  <a href="#" class="button">Подробнее</a>
-                  <a href="#" class="button">Забронировать</a>
+                  <a href="#" class="more">Подробнее</a>
+                  <a href="#" class="book">Забронировать</a>
                 </p>
             </div>
               <p class="catalog-item-rate">
@@ -119,9 +167,8 @@
         </ul>
       </div>
       <p class="footer-copyright">
-        <!--
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright-htmlacademy">Logo htmlacademy</a>
-      -->
+        <b>Website by:</b>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright-htmlacademy">HTML Academy</a>
       </p>
     </footer>
   </body>

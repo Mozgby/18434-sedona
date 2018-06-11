@@ -113,7 +113,7 @@
         <p>Укажите предполагаемые даты поездки,<br>
            и мы покажем вам лучшие предложения гостиниц в Cедоне
         </p>
-        <span class="button search-hotel-modal">Поиск гастиницы в седоне</span>
+        <button class="button search-hotel-modal" type="button">Поиск гастиницы в седоне</button>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Седона на карте</h2>
@@ -129,14 +129,31 @@
         </ul>
       </div>
       <p class="footer-copyright">
-        <!--
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright-htmlacademy">Logo htmlacademy</a>
-      -->
+        <b>Website by:</b>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-copyright-htmlacademy">HTML Academy</a>
       </p>
     </footer>
 
     <section class="modal modal-search-hotel">
-      <!--Форма поиска гостиницы-->
+        <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="search-hotel-date-arrival">Дата заезда:</label>
+          <input id="search-hotel-date-arrival" type="text" name="date-arrival" value="24 апреля 2017">
+          <label for="search-hotel-date-departure">Дата выезда:</label>
+          <input id="search-hotel-date-departure" type="text" name="date-departure" value="4 июля 2017">
+          <div class="adults">
+            <label for="search-hotel-adults">Взрослые:</label>
+            <button class="search-hotel-control remove" type="button">Удалить</button>
+            <input id="search-hotel-adults" type="number" name="adults" size="1" min="0" max="9" value="2" >
+            <button class="search-hotel-control add" type="button">Добавить</button>
+          </div>
+          <div class="children">
+            <label for="search-hotel-children">Дети:</label>
+            <button class="search-hotel-control remove" type="button">Удалить</button>
+            <input id="search-hotel-children" type="number" name="children" size="1" min="0" max="9" value="0" >
+            <button class="search-hotel-control add" type="button">Добавить</button>
+          </div>
+          <button class="button" type="submit">Найти</button>
+        </form>
     </section>
   </body>
 </html>
