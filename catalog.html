@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -60,12 +63,12 @@
           <fieldset>
             <legend>Стоимость в сутки (р):</legend>
             <div class="filter-button-cost">
-              <button type="button" name="min-cost">От 0</button>
-              <button type="button" name="max-cost">До 3000</button>
+              <button type="button" class="button button-cost" name="min-cost">От 0</button>
+              <button type="button" class="button button-cost" name="max-cost">До 3000</button>
             </div>
             <input type="range" name="total-cost" value="">
           </fieldset>
-          <button type="submit" class="filter-button">Показать</button>
+          <button type="submit" class="button filter-button">Показать</button>
         </form>
       </section>
       <section class="hotel-sort">
@@ -92,7 +95,7 @@
                 </a>
               </p>
               <div class="catalog-description">
-                <a href="catalog-item.html">
+                <a href="catalog-item.html" class="catalog-item-link">
                   <h3 class="catalog-item-title">Amara Resort & Spa</h3>
                 </a>
                 <p class="catalog-item-description">
@@ -115,7 +118,7 @@
                 </a>
               </p>
               <div class="catalog-description">
-                <a href="catalog-item.html">
+                <a href="catalog-item.html" class="catalog-item-link">
                   <h3 class="catalog-item-title">Desert Quail Inn</h3>
                 </a>
                 <p class="catalog-item-description">
@@ -138,7 +141,7 @@
                 </a>
               </p>
               <div class="catalog-description">
-                <a href="catalog-item.html">
+                <a href="catalog-item.html" class="catalog-item-link">
                   <h3 class="catalog-item-title">Villas At Poco Diablo</h3>
                 </a>
                 <p class="catalog-item-description">
