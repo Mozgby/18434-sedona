@@ -90,8 +90,12 @@ a {
   list-style: none;
 }
 
-.advantage-description-list .advantage-item p{
+.advantage-description-list .advantage-item {
 color: #333333;
+}
+
+.advantage-description-list h2 {
+color: #000000;  
 }
 
 .search-hotel-header{
