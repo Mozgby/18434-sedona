@@ -681,18 +681,20 @@ display: flex;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+
 }
 .catalog-item {
   display: flex;
-  width: 100%;
-border-top: 1px solid #e5e5e5;
-border-bottom: 1px solid #e5e5e5;
-padding-bottom: 14px;
-
+padding-top: 25px;
+  padding-bottom: 28px;
+  padding-left: 70px;
+  padding-right: 73px;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 .catalog-item-image {
-  margin-top: 30px;
-  margin-left: 70px;
+  margin:0;
   width: 135px;
   height: 90px;
 
@@ -702,7 +704,7 @@ padding-bottom: 14px;
 }
 .catalog-description h3 {
   margin: 0;
-  padding-top: 25px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -731,6 +733,7 @@ padding-bottom: 14px;
 .catalog-item-buttons {
   width:258px;
   margin:0;
+  padding: 0;
   display: flex;
 
 }
@@ -784,7 +787,6 @@ padding-bottom: 14px;
 }
 .catalog-item-rate {
   width: 112px;
-  margin-right: 73px;
   margin-left: auto;
   display: flex;
   flex-direction: column;
@@ -794,11 +796,11 @@ padding-bottom: 14px;
   justify-content: flex-end;
   margin: 0;
   list-style: none;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 }
 .catalog-rate-stars li{
   margin-left: 5px;
-  margin-top: 27px;
+
 
 }
 .visually-hidden:not(:focus):not(:active),
