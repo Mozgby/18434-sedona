@@ -1,8 +1,8 @@
 var btnOpen = document.querySelector(".search-hotel-modal");
 var modalHotel = document.querySelector(".modal-search-hotel");
 var form = modalHotel.querySelector("form");
-var inputArrival = modalHotel.querySelector("search-hotel-date-arrival");
-var inputDeparture = modalHotel.querySelector("search-hotel-date-departure");
+var inputArrival = modalHotel.querySelector(".search-hotel-date-arrival");
+var inputDeparture = modalHotel.querySelector(".search-hotel-date-departure");
 
 var isStorageSupport = true;
 var storage = "";
