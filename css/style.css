@@ -66,6 +66,8 @@ a
 
     list-style: none;
 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -73,7 +75,7 @@ a
 
 .site-navigation li
 {
-    width: 25%;
+    width: 20%;
 }
 .site-navigation li:first-child
 {
@@ -82,9 +84,17 @@ a
 
 .site-navigation li:nth-child(2)
 {
-    margin-right: 8%;
+    margin-right: 20%;
 
     text-align: left;
+}
+.nav-item-second a
+{
+    margin-left: 30px;
+}
+.nav-item-third a
+{
+    margin-right: 30px;
 }
 .site-navigation li:nth-child(3)
 {
@@ -145,7 +155,6 @@ a
 {
     width: 458px;
     height: 352px;
-    margin: 0 auto;
 }
 .content-header
 {
@@ -158,6 +167,8 @@ a
     padding-right: 73px;
     padding-bottom: 53px;
     padding-left: 73px;
+
+    background-color: #fff;
 
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -229,7 +240,6 @@ a
 
     width: 100%;
     margin: 0;
-
 }
 .advantage-item p
 {
@@ -245,6 +255,8 @@ a
 {
     padding-top: 60px;
     padding-bottom: 83px;
+
+    background-color: #fff;
 }
 .features-list
 {
@@ -309,7 +321,6 @@ a
 {
     margin: 0;
 
-
     color: #000;
     background-color: #eee;
 }
@@ -324,6 +335,9 @@ a
     padding: 0;
 
     list-style: none;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .advantage-description-list .advantage-item
@@ -348,6 +362,8 @@ a
     list-style: none;
 
     text-align: center;
+
+    background-color: #fff;
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -467,11 +483,14 @@ a
     height: 47px;
     margin-top: -120px;
     padding-top: 37px;
+    padding-right: 73px;
     padding-bottom: 36px;
     padding-left: 133px;
-    padding-right: 73px;
+
     background: rgba(255, 255, 255, .9);
 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -482,7 +501,11 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    height: 120px;
+    height: 47px;
+    padding-top: 37px;
+    padding-right: 73px;
+    padding-bottom: 36px;
+    padding-left: 133px;
 
     background: rgba(255, 255, 255, .9);
 
@@ -504,7 +527,6 @@ a
 {
     margin-top: 0;
     margin-bottom: 0;
-
 }
 .footer-social
 {
@@ -525,11 +547,11 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    margin: 0 auto;
     padding: 0;
 
     list-style: none;
 
+        flex-wrap: wrap;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -579,11 +601,12 @@ a
 {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
 
     width: 33.333%;
     margin: 0;
 
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -599,6 +622,8 @@ a
 {
     font-weight: 400;
     line-height: 26px;
+
+    display: block;
 
     color: #000;
 }
@@ -1202,9 +1227,12 @@ a
 .price-controls input
 {
     font: inherit;
+    line-height: 10px;
 
     width: 50px;
     margin: 0;
+
+    vertical-align: baseline;
 
     color: inherit;
     border: none;
@@ -1300,6 +1328,8 @@ a
     padding-right: 73px;
     padding-bottom: 18px;
     padding-left: 72px;
+
+    background-color: #fff;
 }
 .hotel-sort-total
 {
@@ -1408,6 +1438,10 @@ a
 .svg-desc:active
 {
     fill: #81b3d2;
+}
+.catalog
+{
+    background-color: #fff;
 }
 .catalog-list
 {
@@ -1588,6 +1622,7 @@ a
 
     margin: 0;
     margin-bottom: 47px;
+    padding: 0;
 
     list-style: none;
 
